@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>5025201229 | KUIS</title>
+</head>
+<body>
+    <div class="KOP">
+        <table>
+            <tr>
+                <!-- LOGO -->
+                <td><img src="logo.png" alt="logo"></td>
+                <!-- KOP KALIMAT -->
+                <td id="keteranganKOP">
+                    <h3>PEMERINTAH KABUPATEN SOLOK<br>RUMAH SAKIT UMUM DAERAH AROSUKA</h3>
+                    <i>Jl. Raya Solok Padang KM. 20 Arosuka Kode pos 27364 <br>Propinsi Sumatera Barat Telp. / Fax (0755) 31160 <br>Email : email@gmail.com</i>
+                </td>
+                <!-- LOGO AROSUKA -->
+                <td><img src="logoArosuka.png" alt="logoArosuka"></td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+
+    <div class="formulir">
+        <form action="">
+            <h3 id="judulForm">FORMULIR PENDAFTARAN PASIEN BARU</h3>
+            <p class="besar">PERHATIAN : HARAP MENGISI FORMULIR INI DENGAN LENGKAP DAN JELAS</p>
+                <h3>I.IDENTITAS PASIEN</h3>
+            
+                <table id="tableForm">
+                    <tr>
+                        <td>Nama Pasien</td>
+                        <td><input type="text" id="namaPasien" required></td>
+                    </tr>
+                    <tr>
+                        <td>Tempat Lahir</td>
+                        <td><input type="text" id="tempat" required></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td><input type="date" id="tanggal" required></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <select name="jenisKelamin" id="jenisKelamin">
+                                <option value="laki-laki">Laki-Laki</option>
+                                <option value="perempuan">Perempuan</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td><input type="text" id="alamat" required></td>
+                    </tr>
+                    <tr>
+                        <td>RT</td>
+                        <td><input type="text" id="RT" required></td>
+                    </tr>
+                    <tr>
+                        <td>RW</td>
+                        <td><input type="text" id="RW" required></td>
+                    </tr>
+                    <tr>
+                        <td>Provinsi</td>
+                        <td><input type="text" id="provinsi" required></td>
+                    </tr>
+                    <tr>
+                        <td>Kecamatan</td>
+                        <td><input type="text" id="kecamatan" required></td>
+                    </tr>
+                    <tr>
+                        <td>Kelurahan/Desa</td>
+                        <td><input type="text" id="desa" required></td>
+                    </tr>
+                    <tr>
+                        <td>No.Tel/HP</td>
+                        <td><input type="text" id="HP" required></td>
+                    </tr>
+                    <tr>
+                        <td>Kode Pos</td>
+                        <td><input type="text" id="kodePos" required></td>
+                    </tr>
+                    <tr>
+                        <td>Agama</td>
+                        <td>
+                            <select name="agama" id="agama">
+                                <option value="Islam">Islam</option>
+                                <option value="Protestan">Protestan</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Buddha">Buddha</option>
+                                <option value="Khonghucu">Khonghucu</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pendidikan Terakhir</td>
+                        <td><input type="text" id="pendidikan" required></td>
+                    </tr>
+                    <tr>
+                        <td>Pekerjaan</td>
+                        <td><input type="text" id="pekerjaan" required></td>
+                    </tr>
+                </table>
+            
+                <h3>II.PENANGGUNG JAWAB PASIEN</h3>
+                <table id="tableForm">
+                    <tr>
+                        <td>Hubungan Dengan Pasien</td>
+                        <td><input type="text" id="hubungan" required></td>
+                    </tr>
+                    <tr>
+                        <td>Nama Penanggung Jawab</td>
+                        <td><input type="text" id="namaPJ" required></td>
+                    </tr>
+                    <tr>
+                        <td>Pendidikan P. Jawab</td>
+                        <td><input type="text" id="pendidikanPJ" required></td>
+                    </tr>
+                    <tr>
+                        <td>Pekerjaan P. Jawab</td>
+                        <td><input type="text" id="pekerjaanPJ" required></td>
+                    </tr>
+                </table>
+            
+                <!-- <div id="TTD"> -->
+                    <table class="TTD" style="text-align: center; width: 100%; margin-top: 50px;">
+                        <tr>
+                            <td>
+                                <h4>Tanda Tangan</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="file" id="TTDorang" name="TTDorang" accept="image/png, image/jpeg">
+                                <br> Nama
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="namaTTD">
+                            </td>
+                        </tr>
+                    </table>
+                <!-- </div> -->
+
+                <div class="sub" style="text-align: center;">
+                    <input class="buttonKirim" type="submit" value="KIRIM" onclick="daftar()">
+                </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

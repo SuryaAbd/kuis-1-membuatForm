@@ -1,0 +1,51 @@
+body {
+    width: 80%;
+    margin: 1em auto;
+}
+
+hr {
+    height: 6px;
+    width: 90%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.KOP {
+    height: 100px;
+    margin-bottom: 10em;
+}
+
+#keteranganKOP {
+    text-align: center;
+    width: 500%;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+#judulForm {
+    text-align: center;
+}
+
+.besar {
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.formulir {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#tableForm {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.buttonKirim {
+    margin-top: 50px;
+}
