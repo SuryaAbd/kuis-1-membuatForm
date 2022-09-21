@@ -40,8 +40,15 @@ function daftar(){
     {
         alert("kodepos dan no HP hanya angka saja");
     }
+    else if(!angka.test(f) || !angka.test(g))
+    {
+        alert("RT dan RW angka saja");
+    }
 }
 
+function submit(){
+    alert("BERHASILL");
+}
 
 // MAX TANGGAL IS TODAY
 var today = new Date();
